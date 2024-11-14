@@ -1,0 +1,203 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1C1C1C;
+    
+}
+#main-container{
+     width: 550px;
+     height: 550px;
+     border: 1px solid #1F2937;
+     background-color: #1F2937;
+
+
+}#sub-container{
+    border: 1px solid #1F2937;
+    margin-left: 50px;
+    margin-top: 78px;
+}
+h1{
+  margin-bottom: 0px;
+  font-weight:700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+span{
+     
+    color: #4ADF86;
+}
+h4{
+    color: #D5D4D8;
+    margin-bottom: 50px;
+    font-family: verdana;}
+
+hr{
+    background-color:#2F3E53;
+    width: 446px;
+    margin-bottom: 40px;
+    height: 1px;
+    border: none
+}
+button{
+    font-family:Verdana, Tahoma;
+    font-size: 16px;
+    font-weight:300;
+    margin-bottom: 20px;
+    width:191px ;
+    height: 42px;
+    border: 1px solid #4ADF86;
+    border-radius: 6px;
+   background-color:#4ADF86;
+   color: #FFFFFF;
+   cursor: pointer;
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:197px ;
+    height: 26px;
+    border: 1px solid #273549;
+    border-radius: 6px;
+    outline: none;
+    background-color: #273549;
+    color: #4ADF86;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-left: 15px;
+    width:197px ;
+    height: 26px;
+    border: 1px solid #273549;
+    border-radius: 6px;
+    outline: none;
+    background-color: #273549;
+    color: #4ADF86;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+#password-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#grid{
+   display: flex;
+
+}
+#input-el{
+     
+    text-align: center;
+    border: 1px solid#273549 ;
+    background-color: #273549;
+      margin-left: 10px;
+      width: 70px;
+    height: 20px;
+    border-radius: 6px;
+    padding: 10px;
+   outline: none;
+   color: #FFFFFF;
+}
+#input-el:focus::placeholder{
+    color:transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button, input
+     [type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; margin: 0;}
+
+
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+  }
+  
+  /* Giriş stil */
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+  
+  /* Anahtarın stilinin etrafındaki etiketin stil */
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Anahtarın yuvarlak kısmının stil */
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
+  /* Light tema */
+  .toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(6px);
+  }
+  
+  /* Dark tema */
+  .toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  @media screen and (min-width: 80rem) {
+    #main-container{
+      margin: 1em 2em;
+    }
+  }
+  @media screen and (max-width: 40rem) { #main-container { margin: 0.5em 1em; } }
